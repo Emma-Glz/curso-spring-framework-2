@@ -35,8 +35,8 @@ public class Config {
             );
     }
   
-    @Primary
-    @Bean
+    //@Primary
+    @Bean("default")
     List<Item> itemsInvoiceOffice(){
         return Arrays.asList(
             new Item(new Product("Toperware", 100),5), 
